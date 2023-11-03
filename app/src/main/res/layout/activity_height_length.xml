@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".height_length">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar2"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:background="#71A85F"
+        tools:ignore="MissingConstraints" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Converter"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginStart="260dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/edTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="140dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="Enter Height/Length Here" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MtoIn"
+            android:text="Meter to Inch"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/IntoM"
+            android:text="Inch to Meter"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate"
+        android:text="Calculate"
+        android:backgroundTint="#71A85F"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClear"
+        android:backgroundTint="#71A85F"
+        android:text="Clear"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
